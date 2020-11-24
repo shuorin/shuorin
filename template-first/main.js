@@ -7,4 +7,3 @@ $(document).ready(function() {
     $('.dropdown-block .hidden-dropdown-block').not($(this).next()).slideUp(1000);
       $(this).next().slideToggle(1000);
   }
-
