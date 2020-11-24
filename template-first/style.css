@@ -69,10 +69,6 @@ a:active {
     color: #46B4D4;
 }
 
-.navigation-link:last-child {
-    padding-right: 0px;
-}
-
 .inner-header {
     display: flex;
     justify-content: center;
@@ -80,7 +76,7 @@ a:active {
 
 .header-info {
     width: 1110px;
-    height: 537px;
+    min-height: 537px;
 }
 
 .header-map {
@@ -92,7 +88,7 @@ a:active {
 
 .inner-header-map {
     max-width: 1110px;
-    height: 537.15px;
+    min-height: 537.15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +105,7 @@ a:active {
 .header-image-cover {
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 454px;
+    max-width: 50%;
     transform: rotate(-20.26deg);
     overflow: hidden;
     position: absolute;
@@ -117,7 +113,7 @@ a:active {
 }
 
 .header-image {
-    max-width: 511px;
+    max-width: 100%;
 }
 
 
@@ -271,14 +267,17 @@ a:active {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 70px;
+    max-width: 95%;
 }
 
 .partner-logo-block {
     flex: 0 0 17%;
+    align-items: center;
 }
 
 .partner-logo {
     align-items: start;
+    max-width: 100%;
 }
 
 .container {
@@ -348,7 +347,7 @@ a:active {
 
 .footer {
     background-color: #485053;
-    height: 110px;
+    min-height: 110px;
 }
 .inner-footer {
     max-width: 1104px;
@@ -356,7 +355,7 @@ a:active {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    height: 110px;
+    min-height: 110px;
 }
 .footer-logo-image {
     width: 125px;
@@ -445,9 +444,7 @@ a:active {
         visibility: visible;
         right: 0;
       }
-      .header-image-cover, .header-image {
-          max-width: 350px;
-      }
+      
       .feature-block {
           width: 50%;
           text-align: center;
@@ -461,6 +458,30 @@ a:active {
       
 
 }
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-    
+@media only screen and (max-width : 760px) {
+    .plans {
+        justify-content: center;
+    }
+    .plan-image {
+        display: none;
+    }
+}
+@media only screen and (max-width : 640px) {
+    .inner-header-map {
+        justify-content: center;
+    }
+    .header-image-block {
+        display: none;
+    }
+}
+@media only screen and (min-width : 320px) and (max-width : 560px) {
+    .feature-block {
+        width: 100%;
+    }
+    .menu__btn {
+        right: 25px;
+    }
+    .partner-logo-block {
+        padding: 0 10px
+    }
 }
