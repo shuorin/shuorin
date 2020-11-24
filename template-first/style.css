@@ -49,14 +49,13 @@ a:active {
 }
 
 .logo {
-    width: 191px;
+    width: 100%;
     
 }
 
 .navigation-links {
     font-family: 'Sunflower', sans-serif;
     font-weight: 700;
-    margin-top: 51px;
 }
 
 .navigation-link,
@@ -378,13 +377,12 @@ a:active {
       .menu__btn {
         display: flex; 
         align-items: center; 
-        position: relative;
-        top: 40px;
+        position: fixed;
         right: 50px;
         width: 26px;
         height: 26px;
         cursor: pointer;
-        z-index: 1;
+        z-index: 2;
       }
       
       .menu__btn > span,
@@ -417,6 +415,7 @@ a:active {
         text-align: center;
         background-color: #ECEFF1;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 1;
       }
       .navigation-link {
         display: block;
