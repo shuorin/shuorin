@@ -45,11 +45,12 @@ a:active {
 .navigation-panel {
     display: flex;
     justify-content: space-between;
+    margin-top: 45px;
 }
 
 .logo {
     width: 191px;
-    margin-top: 45px;
+    
 }
 
 .navigation-links {
